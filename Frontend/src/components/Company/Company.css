@@ -1,0 +1,60 @@
+.company-component{
+    margin: 10px auto;
+    border: none;
+    border-radius: 20px;
+    background-image: url('./../../assets/images/background.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    max-width: 90vw;
+    min-height: 70vh;
+}
+
+.company-content{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    padding: 40px 50px;
+    gap: 20px;
+}
+
+.company-content h1{
+    font-size: 4rem;
+}
+
+.company-content p{
+    font-size: 1rem;
+
+}
+
+.company-content button{
+    color: white;
+    padding: 20px 30px;
+    background-color: transparent;
+    border: solid white;
+    border-width: 1px;
+    border-radius: 30px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.company-content button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 900px){
+    .company-component{
+        max-width: 90vw;
+    }
+    .company-content h1{
+        font-size: 2rem;
+    }
+}
