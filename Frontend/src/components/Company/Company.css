@@ -58,3 +58,21 @@
         font-size: 2rem;
     }
 }
+
+@media (max-width: 950px){
+    .company-component{
+        min-height: 32vh;
+    }
+}
+
+@media (max-width: 1024px){
+    .company-component{
+        min-height: 32vh;
+    }
+}
+
+@media (max-width: 870px){
+    .company-component{
+        min-height: 25vh;
+    }
+}

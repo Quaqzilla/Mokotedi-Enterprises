@@ -79,6 +79,10 @@ body {
     margin: 0 4px;
 }
 
+.ceo-image img{
+    max-width: 400px;
+}
+
 @media (max-width: 900px){
     .ceo-component {
         flex-direction: column;
@@ -139,9 +143,21 @@ body {
     }
     .ceo-quote-text {
         font-size: 0.85rem;
+        text-align: center;
     }
     .ceo-signature {
         font-size: 0.85rem;
     }
 }
 
+@media (max-width: 1024px){
+    .ceo-image img{
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 950px){
+    .ceo-image img{
+        display: none;
+    }
+}

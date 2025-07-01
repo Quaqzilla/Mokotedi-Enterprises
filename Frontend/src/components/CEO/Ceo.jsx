@@ -1,11 +1,12 @@
 import './Ceo.css';
+import CeoImage from './../../assets/images/CEO.png';
 
 const Ceo = () => {
     return(
         <div className="ceo-component">
 
             <div className="ceo-image" data-aos = "fade-right" data-aos-duration = "2000">
-                <img src="" alt="ceo/founder" />
+                <img src={CeoImage} alt="ceo/founder" />
             </div>
 
             <div className="ceo-message" data-aos = "fade-left" data-aos-duration = "2500">

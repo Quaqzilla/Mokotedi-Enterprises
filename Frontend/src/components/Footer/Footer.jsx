@@ -1,5 +1,7 @@
 import './Footer.css';
-
+import linked from './../../assets/images/linkedIn.png';
+import ig from './../../assets/images/ig.png';
+import whatsapp from './../../assets/images/whatsapp.png';
 
 const Footer = () => {
     return(
@@ -10,9 +12,9 @@ const Footer = () => {
                 <div className="right-side">
                     <h1>Business Name</h1>
                     <div className="social-icons">
-                        <img src="" alt="LinkedIn" />
-                        <img src="" alt="Instagram" />
-                        <img src="" alt="Whatsapp" />
+                        <img src={linked} alt="LinkedIn" />
+                        <img src={ig} alt="Instagram" />
+                        <img src={whatsapp} alt="Whatsapp" />
                     </div>
                 </div>
 

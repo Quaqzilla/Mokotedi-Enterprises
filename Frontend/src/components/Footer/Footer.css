@@ -105,6 +105,12 @@
     letter-spacing: 0.5px;
 }
 
+.social-icons img{
+    max-width: 30px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
 @media (max-width: 900px) {
     .footer-component{
         max-width: 100vw;
