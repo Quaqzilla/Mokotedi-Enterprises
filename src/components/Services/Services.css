@@ -80,10 +80,18 @@
 
     .services-panel{
         background-color: rgb(0, 0, 0);
-        color: white;
+        color: rgb(184, 130, 50);
     }
 
     .panel-learnmore a{
         color: white;
+    }
+}
+
+@media (max-width: 1000px){
+    .services-categories{
+        max-width: 100vw;
+        display: flex;
+        flex-direction: column;
     }
 }

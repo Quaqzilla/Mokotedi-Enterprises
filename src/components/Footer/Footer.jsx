@@ -2,6 +2,7 @@ import './Footer.css';
 import linked from './../../assets/images/linkedIn.png';
 import ig from './../../assets/images/ig.png';
 import whatsapp from './../../assets/images/whatsapp.png';
+import logo from './../../assets/images/pagelogo.png';
 
 const Footer = () => {
     return(
@@ -10,7 +11,7 @@ const Footer = () => {
             <div className="footer-content">
 
                 <div className="right-side">
-                    <h1>Business Name</h1>
+                    <img src={logo} alt="" className='logo'/>
                     <div className="social-icons">
                         <img src={linked} alt="LinkedIn" />
                         <img src={ig} alt="Instagram" />
