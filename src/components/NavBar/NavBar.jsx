@@ -1,12 +1,25 @@
 import './NavBar.css';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router';
 import logo from './../../assets/images/pagelogo.png';
 
 const NavBar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const navigate = useNavigate();
 
     const handleHamburgerClick = () => {
         setMenuOpen(!menuOpen);
+    };
+
+    const AboutUs = async(e) => {
+        e.preventDefault();
+
+        try{
+            navigate("/About-Us");
+        }catch (error){
+            console.error(error);
+        }
+
     };
 
     return(
@@ -23,7 +36,7 @@ const NavBar = () => {
 
             <div className="nav-selection">
                 <ul className={menuOpen ? 'open' : ''}>
-                    <a href="" data-aos = "zoom-in" data-aos-duration = "2000">About Us</a>
+                    <a href="" data-aos = "zoom-in" data-aos-duration = "2000" onClick={AboutUs}>About Us</a>
                     <a href="" data-aos = "zoom-in" data-aos-duration = "2200">Services</a>
                     <a href="" data-aos = "zoom-in" data-aos-duration = "2400">FAQ</a>
                 </ul>
