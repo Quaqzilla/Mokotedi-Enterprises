@@ -7,7 +7,6 @@ const App = () => {
       <BrowserRouter basename='/Mokotedi-Enterprises'>
         <Routes>
           <Route path='/' element={<Landing/>}/>
-
         </Routes>
       </BrowserRouter>
   )

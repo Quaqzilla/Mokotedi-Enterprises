@@ -55,6 +55,7 @@
     height: 32px;
     z-index: 1001;
 }
+
 .hamburger span {
     height: 4px;
     width: 100%;
@@ -62,6 +63,10 @@
     margin: 4px 0;
     border-radius: 2px;
     transition: 0.4s;
+}
+
+.nav-logo img{
+    max-width: 200px;
 }
 
 @media (max-width: 900px) {
@@ -91,7 +96,7 @@
     .nav-selection ul.open {
         display: flex;
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(50);
         pointer-events: auto;
     }
     .nav-button {
@@ -102,6 +107,10 @@
         position: absolute;
         right: 24px;
         top: 24px;
+    }
+    .nav-logo img{
+        max-width: 200px;
+        margin-top: 10px;
     }
 }
 
