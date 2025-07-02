@@ -111,6 +111,10 @@
     cursor: pointer;
 }
 
+.logo{
+    max-width: 250px;
+}
+
 @media (max-width: 900px) {
     .footer-component{
         max-width: 100vw;
@@ -118,13 +122,13 @@
 
     .footer-content {
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         gap: 24px;
         padding: 32px 4vw 12px 4vw;
     }
 
     .left-side {
-        flex-direction: column;
+        flex-direction: row;
         gap: 18px;
         align-items: center;
     }
@@ -132,4 +136,5 @@
     .footer-logo img {
         margin-bottom: 0;
     }
+
 }
