@@ -1,0 +1,10 @@
+After making changes to the existing project:
+
+1. Commit the changes to the github repository
+
+2. cd Frontend
+
+3. npm run build
+
+4. npm run deploy
+

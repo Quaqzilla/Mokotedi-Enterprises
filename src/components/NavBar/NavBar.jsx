@@ -1,5 +1,6 @@
 import './NavBar.css';
 import React, { useState } from 'react';
+import logo from './../../assets/images/pagelogo.png';
 
 const NavBar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ const NavBar = () => {
     return(
         <div className="navbar-component">
             <div className="nav-logo" data-aos = "fade-right" data-aos-duration = "1500">
-                <img src="" alt="logo" />
+                <img src={logo} alt="logo" />
             </div>
 
             <div className="hamburger" onClick={handleHamburgerClick} aria-label="Toggle navigation" tabIndex={0} role="button">
