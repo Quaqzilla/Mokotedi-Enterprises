@@ -1,0 +1,9 @@
+.about-section{
+    padding-top: 80px;
+}
+
+@media (min-width: 1024px){
+    .about-section{
+        padding-top: 100px;
+    }
+}
