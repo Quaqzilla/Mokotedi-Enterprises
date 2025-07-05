@@ -1,6 +1,178 @@
 .about-section{
-    padding-top: 80px;
+    padding-top: 50px;
 }
+
+.about-image{
+    background-image: url("./../../assets/images/city.png");
+    min-height: 420px;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.about-content{
+    padding: 18px 22px;
+}
+
+.heading h1{
+    font-weight: 450;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12px;
+    color: black;
+    position: relative;
+}
+
+.heading h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 13px;
+    width: 100px;
+    height: 4px;
+    background: #e7aa25;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(231,170,37,0.15);
+}
+
+.about-story p{
+    padding-bottom: 20px;
+    font-size: 1.15rem;
+    color: #3d2c0a;
+    line-height: 1.7;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(231,170,37,0.07);
+    padding: 18px 24px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.about-mission p{
+    padding-bottom: 20px;
+    font-size: 1.15rem;
+    color: #3d2c0a;
+    line-height: 1.7;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(231,170,37,0.07);
+    padding: 18px 24px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.value-summary p{
+    padding-bottom: 20px;
+    font-size: 1.15rem;
+    color: #3d2c0a;
+    line-height: 1.7;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(231,170,37,0.07);
+    padding: 18px 24px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.value{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 10px;
+}
+
+.value-heading h3{
+    max-width: 100px;
+    padding: 18px 22px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-right: 80px;
+    color: #b65a0e;
+}
+
+.value-text{
+    background-color: black;
+    color: white;
+    padding: 26px 32px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.about-founder p{
+    padding-bottom: 20px;
+    font-size: 1.15rem;
+    color: #3d2c0a;
+    line-height: 1.7;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(231,170,37,0.07);
+    padding: 18px 24px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.about-founder ul{
+    padding-bottom: 20px;
+    font-size: 1.15rem;
+    color: #3d2c0a;
+    line-height: 1.7;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(231,170,37,0.07);
+    padding: 18px 24px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: disc outside;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+.about-founder ul li{
+    text-align: left;
+    width: 100%;
+    margin-bottom: 8px;
+    align-self:flex-start;
+}
+
+@media (max-width: 900px){
+    .heading h1{
+        font-size: 2rem;
+    }
+
+    .value{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding: 18px 22px;
+        gap: 10px;
+        margin-bottom: 2px;
+    }
+
+    .value-heading h3{
+        max-width: 100vw;
+    }
+}
+
 
 @media (min-width: 1024px){
     .about-section{
