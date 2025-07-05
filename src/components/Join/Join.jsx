@@ -1,5 +1,5 @@
 import './Join.css';
-import join from './../../assets/images/bird.png';
+import join from './../../assets/images/join.png';
 
 const Join = () => {
     return(
