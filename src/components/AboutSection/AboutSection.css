@@ -1,5 +1,5 @@
 .about-section{
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .about-image{
@@ -156,7 +156,8 @@
 
 @media (max-width: 900px){
     .heading h1{
-        font-size: 2rem;
+        font-size: 1.8rem;
+        max-width: 100vw;
     }
 
     .value{
@@ -170,6 +171,7 @@
 
     .value-heading h3{
         max-width: 100vw;
+        font-size: 1rem;
     }
 }
 
