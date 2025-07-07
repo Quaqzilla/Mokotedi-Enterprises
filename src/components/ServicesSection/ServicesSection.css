@@ -1,0 +1,13 @@
+.-section{
+    padding-top: 30px;
+}
+
+.about-image{
+    background-image: url("./../../assets/images/city.png");
+    min-height: 420px;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

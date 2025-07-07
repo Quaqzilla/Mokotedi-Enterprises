@@ -11,6 +11,16 @@ const NavBar = () => {
         setMenuOpen(!menuOpen);
     };
 
+    const homePage = async(e) => {
+        e.preventDefault();
+
+        try{
+            navigate('/');
+        }catch (error){
+            console.erroe(error);
+        }
+    };
+
     const AboutUs = async(e) => {
         e.preventDefault();
 
@@ -22,10 +32,22 @@ const NavBar = () => {
 
     };
 
+    const Services = async (e) => {
+        e.preventDefault();
+
+        try{
+            navigate('/Our-Services');
+        }catch (error){
+            console.error(error);
+        }
+    };
+
+
+
     return(
         <div className="navbar-component">
             <div className="nav-logo" data-aos = "fade-right" data-aos-duration = "1500">
-                <img src={logo} alt="logo" />
+                <img src={logo} alt="logo" onClick={homePage}/>
             </div>
 
             <div className="hamburger" onClick={handleHamburgerClick} aria-label="Toggle navigation" tabIndex={0} role="button">
@@ -37,7 +59,7 @@ const NavBar = () => {
             <div className="nav-selection">
                 <ul className={menuOpen ? 'open' : ''}>
                     <a href="" data-aos = "zoom-in" data-aos-duration = "2000" onClick={AboutUs}>About Us</a>
-                    <a href="" data-aos = "zoom-in" data-aos-duration = "2200">Services</a>
+                    <a href="" data-aos = "zoom-in" data-aos-duration = "2200" onClick={Services}>Services</a>
                     <a href="" data-aos = "zoom-in" data-aos-duration = "2400">FAQ</a>
                 </ul>
             </div>
