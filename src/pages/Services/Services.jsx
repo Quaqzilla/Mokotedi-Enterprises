@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import NavBar from './../../components/NavBar/NavBar';
 import Footer from './../../components/Footer/Footer';
+import ServicesSection from './../../components/ServicesSection/ServicesSection';
 
 const Services = () => {
 
@@ -11,7 +12,7 @@ const Services = () => {
     return(
         <div>
             <NavBar/>
-
+            <ServicesSection/>
             <Footer/>
         </div>
     )
