@@ -29,6 +29,11 @@
     gap: 100px;
 }
 
+.tools-slide img{
+    max-width: 50px;
+    margin-right: 10px;
+}
+
 .services-panel{
     display: flex;
     flex-direction: column;
@@ -85,6 +90,10 @@
 
     .panel-learnmore a{
         color: rgb(165, 124, 71);
+    }
+    .tools-slide img{
+        max-width: 30px;
+        margin-right: 5px;
     }
 }
 
