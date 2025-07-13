@@ -1,6 +1,14 @@
 import './ServicesSection.css';
 import iphone from './../../assets/images/IPhone.png';
 import Spline from '@splinetool/react-spline';
+import js from './../../assets/images/js.png';
+import py from './../../assets/images/py.png';
+import react from './../../assets/images/react.png';
+import tech from './../../assets/images/tech.png';
+import java from './../../assets/images/java.png';
+import css from './../../assets/images/css.png';
+import html from './../../assets/images/html.png';
+import web from './../../assets/images/web.png';
 
 const ServicesSection = () => {
     return(
@@ -24,12 +32,12 @@ const ServicesSection = () => {
                             </div>
             
                             <div className="tools-slide">
-                                <img src="" alt="JavaScript" />
-                                <img src="" alt="Python" />
-                                <img src="" alt="Java" />
-                                <img src="" alt="HTML" />
-                                <img src="" alt="CSS" />
-                                <img src="" alt="React" />
+                                <img src={py} alt="Python" />
+                                <img src={java} alt="Java" />
+                                <img src={js} alt="JavaScript" />
+                                <img src={html} alt="HTML" />
+                                <img src={css} alt="CSS" />
+                                <img src={react} alt="React" />
                             </div>
 
                             <div className="description" data-aos = "zoom-in" data-aos-duration = "2200">
@@ -93,7 +101,7 @@ const ServicesSection = () => {
 
                             <div className="rate-frame" data-aos = "fade-right" data-aos-duration = "2200">
                                 <div className="rate-image">
-                                    <img src="" alt="Website Icon" />
+                                    <img src={web} alt="Website Icon" />
                                 </div>
 
                                 <div className="rate-text">
@@ -125,7 +133,7 @@ const ServicesSection = () => {
 
                             <div className="rate-frame" data-aos = "fade-right" data-aos-duration = "2500">
                                 <div className="rate-image">
-                                    <img src="" alt="Technical Support Icon" />
+                                    <img src={tech} alt="Technical Support Icon" />
                                 </div>
 
                                 <div className="rate-text">
