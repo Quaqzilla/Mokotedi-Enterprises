@@ -42,6 +42,16 @@ const NavBar = () => {
         }
     };
 
+    const Work = async (e) => {
+        e.preventDefault();
+
+        try{
+            navigate('/Our-Work');
+        }catch (error){
+            console.error(error);
+        }
+    };
+
 
 
     return(
@@ -60,7 +70,7 @@ const NavBar = () => {
                 <ul className={menuOpen ? 'open' : ''}>
                     <a href="" data-aos = "zoom-in" data-aos-duration = "2000" onClick={AboutUs}>About Us</a>
                     <a href="" data-aos = "zoom-in" data-aos-duration = "2200" onClick={Services}>Services</a>
-                    <a href="" data-aos = "zoom-in" data-aos-duration = "2400">FAQ</a>
+                    <a href="" data-aos = "zoom-in" data-aos-duration = "2400">Projects</a>
                 </ul>
             </div>
 
