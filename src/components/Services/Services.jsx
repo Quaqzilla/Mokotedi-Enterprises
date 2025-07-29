@@ -2,8 +2,42 @@ import './Services.css'
 import service from './../../assets/images/6.webp';
 import about from './../../assets/images/7.webp';
 import work from './../../assets/images/5.webp';
+import { useNavigate } from 'react-router';
 
 const Services = () => {
+    const navigate = useNavigate();
+
+    const services = async(e) => {
+        e.preventDefault();
+
+        try{
+            navigate('/Our-Services');
+        }catch (error){
+            console.error(error);
+        }
+    }
+
+    const abouts = async(e) => {
+        e.preventDefault();
+
+        try{
+            navigate('/About-Us');
+        }catch (error){
+            console.error(error);
+        }
+    }
+
+    const works = async(e) => {
+        e.preventDefault();
+
+        try{
+            navigate('/Our-Work');
+        }catch (error){
+            console.error(error);
+        }
+    }
+
+
     return(
         <div className="services-component">
 
@@ -28,7 +62,7 @@ const Services = () => {
                         succeed <br/>in the digital world.</p>
                     </div>
                     <div className="panel-learnmore">
-                        <a href="">Learn More</a>
+                        <a href="" onClick={services}>Learn More</a>
                     </div>
                 </div>
 
@@ -47,7 +81,7 @@ const Services = () => {
                         their goals and thrive<br/> in a digital world.</p>
                     </div>
                     <div className="panel-learnmore">
-                        <a href="">Learn More</a>
+                        <a href="" onClick={abouts}>Learn More</a>
                     </div>
                 </div>
 
@@ -65,7 +99,7 @@ const Services = () => {
                          deliver real value<br/> for our clients.</p>
                     </div>
                     <div className="panel-learnmore">
-                        <a href="">Learn More</a>
+                        <a href="" onClick={works}>Learn More</a>
                     </div>
                 </div>
 
