@@ -7,7 +7,7 @@ const Display = () => {
         <div className="workpage-component">
             
             {works.map((project) => (
-                <div className="workpage-display" key={project.id} data-aos="fade-right" data-duration="2500">
+                <div className="workpage-display" key={project.id}>
                     <img src={project.image} alt="project image" />
                     <p>
                         {project.description}

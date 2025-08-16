@@ -52,6 +52,16 @@ const NavBar = () => {
         }
     };
 
+    const Contact = async (e) => {
+        e.preventDefault();
+
+        try{
+            navigate('/Contact-Us');
+        }catch (error){
+            console.error(error);
+        }
+    };
+
 
 
     return(
@@ -75,7 +85,7 @@ const NavBar = () => {
             </div>
 
             <div className="nav-button" data-aos = "fade-left" data-aos-duration = "2500">
-                <button>Contact Us</button>
+                <button onClick={Contact}>Contact Us</button>
             </div>
         </div>
     )
