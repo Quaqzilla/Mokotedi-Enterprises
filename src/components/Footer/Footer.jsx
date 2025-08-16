@@ -5,6 +5,7 @@ import whatsapp from './../../assets/images/whatsapp.png';
 import logo from './../../assets/images/pagelogo.png';
 
 const Footer = () => {
+
     return(
         <div className="footer-component">
 
@@ -23,11 +24,11 @@ const Footer = () => {
                     <div className="left-component">
                         <h1>Pages</h1>
                         <ul>
-                            <a href="">Home</a>
-                            <a href="">About Us</a>
-                            <a href="">Services</a>
-                            <a href="">Projects</a>
-                            <a href="">Contact</a>
+                            <a href="/">Home</a>
+                            <a href="About-Us">About Us</a>
+                            <a href="Our-Services">Services</a>
+                            <a href="Our-Work">Projects</a>
+                            <a href="Contact-Us">Contact</a>
                         </ul>
                     </div>
                 </div>

@@ -6,7 +6,8 @@ let work = [
         "description": "work description",
         "link": "website link",
         "id": 1
-    }
+    },
+
 ]
 
 export default work;

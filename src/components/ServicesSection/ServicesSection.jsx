@@ -126,7 +126,7 @@ const ServicesSection = () => {
                                         </ul>
                                     </div>   
 
-                                    <h4>Starting Price: <b>R3000</b></h4>                                 
+                                    <h4>Starting Price: <b>R6500</b></h4>                                 
 
                                 </div>
                             </div>
