@@ -9,8 +9,22 @@ import java from './../../assets/images/java.png';
 import css from './../../assets/images/css.png';
 import html from './../../assets/images/html.png';
 import web from './../../assets/images/web.png';
+import { useNavigate } from 'react-router';
 
 const ServicesSection = () => {
+
+    const navigate =  useNavigate();
+
+    const Bot = async(e) => {
+        e.preventDefault();
+
+        try{
+            navigate('/ChatBot');
+        }catch(error){
+            console.error(error);
+        }
+    };
+
     return(
         <div className="services-section">
 
@@ -165,7 +179,7 @@ const ServicesSection = () => {
                 <div className="ai-text">
                     <h1 data-aos = 'fade-right' data-aos-duration='2000'>Enhance Your Website With Our <b>AI Bots</b></h1>
                     <p data-aos='fade-right' data-aos-duration='2500'>Allow Us To Train Your Bot At A Comprehensive Fee</p>
-                    <button data-aos='fade-right' data-aos-duration='3000'>Talk To Our AI</button>
+                    <button data-aos='fade-right' data-aos-duration='3000' onClick={Bot}>Talk To Our AI</button>
                 </div>
             </div>
 

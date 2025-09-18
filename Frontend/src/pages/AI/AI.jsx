@@ -1,9 +1,10 @@
+import Chat from "../../components/Chat/Chat"
+import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
-import Footer from "../../components/Footer/Footer"
-import Connect from "../../components/Connect/Connect";
-import { useEffect } from "react";
+import {useEffect} from "react";
 
-const Contact = () => {
+
+const AI = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -12,10 +13,10 @@ const Contact = () => {
     return(
         <div>
             <NavBar/>
-            <Connect/>
+            <Chat/>
             <Footer/>
         </div>
     )
 }
 
-export default Contact;
+export default AI;
