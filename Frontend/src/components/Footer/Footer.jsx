@@ -60,6 +60,16 @@ const Footer = () => {
         }
     };
 
+    const openWhatsapp = () => {
+        try{
+            let encodedmessage = encodeURIComponent('Hi \n I am interesred in your services. Please get back to me as soon as possible');
+            let whatsappURL = `https://wa.me/${27735194967}?text=${encodedmessage}`;
+            window.open(whatsappURL, '_blank');
+        }catch (error){
+            console.error(error)
+        }
+    };
+
     return(
         <div className="footer-component">
 
@@ -70,7 +80,10 @@ const Footer = () => {
                     <div className="social-icons">
                         <img src={linked} alt="LinkedIn" />
                         <img src={ig} alt="Instagram" />
-                        <img src={whatsapp} alt="Whatsapp" />
+                        <img src={whatsapp} 
+                        alt="Whatsapp" 
+                        onClick={openWhatsapp}
+                        />
                     </div>
                 </div>
 
