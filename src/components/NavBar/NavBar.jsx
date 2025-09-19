@@ -81,6 +81,7 @@ const NavBar = () => {
                     <a href="" data-aos = "zoom-in" data-aos-duration = "2000" onClick={AboutUs}>About Us</a>
                     <a href="" data-aos = "zoom-in" data-aos-duration = "2200" onClick={Services}>Services</a>
                     <a href="" data-aos = "zoom-in" data-aos-duration = "2400" onClick={Work}>Projects</a>
+                    <a href="" data-aos = "zoom-in" data-aos-duration = "2400" onClick={Contact}>Contact Us</a>
                 </ul>
             </div>
 
