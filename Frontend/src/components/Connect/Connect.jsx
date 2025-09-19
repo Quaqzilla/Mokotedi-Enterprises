@@ -5,7 +5,7 @@ import emailjs from 'emailjs-com';
 
 const Connect = () => {
     const [formdata, setFormdata] = useState({
-        username: "",
+        name: "",
         email: "",
         message: "",
         title: ""
@@ -57,7 +57,7 @@ const Connect = () => {
                         type="text" 
                         placeholder='Enter Your Name'
                         required
-                        value={formdata.username}
+                        value={formdata.name}
                         onChange={handleChange}
                         />
                     </div>
