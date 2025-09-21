@@ -2,7 +2,6 @@ import './Connect.css'
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
 
-
 const Connect = () => {
     const [formdata, setFormdata] = useState({
         name: "",
@@ -32,7 +31,10 @@ const Connect = () => {
             .then(() => alert("Email sent successfully! \n We will get back to you shortly."))
             .catch((error) => {
             console.error("Email send error:", error);
-            alert("Failed to send email. \n\n Please try again.");
+            Alert.alert(
+                "Email Status",
+                "Failed to send email. \n\n Please try again."
+            )
             });
     }
 
@@ -55,6 +57,7 @@ const Connect = () => {
                         <label htmlFor="name">Name</label>
                         <input 
                         type="text" 
+                        name='name'
                         placeholder='Enter Your Name'
                         required
                         value={formdata.name}
@@ -66,6 +69,7 @@ const Connect = () => {
                         <label htmlFor="email">Email</label>
                         <input 
                         type="email" 
+                        name='email'
                         placeholder='Email Address'
                         required
                         value={formdata.email}
@@ -77,6 +81,7 @@ const Connect = () => {
                         <label htmlFor="email">Query Title</label>
                         <input 
                         type="text" 
+                        name='title'
                         value={formdata.title} 
                         onChange={handleChange}
                         />
