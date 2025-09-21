@@ -1,10 +1,10 @@
-import project1 from './../assets/images/1.png';
+import Peter from './../assets/images/Peter.webp';
 
 let work = [
      {
-        "image": project1,
-        "description": "work description",
-        "link": "website link",
+        "image": Peter,
+        "description": "Portfolio Website",
+        "link": "https://www.nottheboredroom.co.za/",
         "id": 1
     },
 
