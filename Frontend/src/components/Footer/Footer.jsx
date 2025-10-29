@@ -93,7 +93,7 @@ const Footer = () => {
                         <ul>
                             <a href="" onClick={homePage}>Home</a>
                             <a href="" onClick={AboutUs}>About Us</a>
-                            <a href="" olocallonClick={Services}>Services</a>
+                            <a href="" onClick={Services}>Services</a>
                             <a href="" onClick={Work}>Projects</a>
                             <a href="" onClick={contact}>Contact</a>
                         </ul>
