@@ -25,6 +25,16 @@ const ServicesSection = () => {
         }
     };
 
+    const webs = async(e) => {
+        e.preventDefault();
+
+        try{
+            navigate('/webpages-offered');
+        }catch(error){
+            console.error(error)
+        }
+    };
+
     return(
         <div className="services-section">
 
@@ -113,7 +123,7 @@ const ServicesSection = () => {
 
                         <div className="rates-frames">
 
-                            <div className="rate-frame" data-aos = "fade-right" data-aos-duration = "2200">
+                            <div className="rate-frame" data-aos = "fade-right" data-aos-duration = "2200" onClick={webs}>
                                 <div className="rate-image">
                                     <img src={web} alt="Website Icon" />
                                 </div>

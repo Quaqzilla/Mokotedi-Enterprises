@@ -1,0 +1,124 @@
+.web-container{
+    padding-top: 60px;
+    max-width: 100vw;
+}
+
+.page-image{
+    background-image: url("./../../assets/images/city.png");
+    min-height: 420px;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.heading p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+}
+
+
+.web-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 40px;
+    margin: 10px 16px;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.4s ease-in-out;
+    max-width: 25vw;
+}
+
+.web-box:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.web-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.web-content{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    gap: 12px;
+}
+
+.web-icon img{
+  max-width: 200px;
+}
+
+.web-icon p{
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.detailed-work h4{
+  font-weight: 700;
+  margin-bottom: 4px;
+  color:darkgoldenrod
+}
+
+.detailed-work ul{
+  margin-bottom: 6px;
+}
+
+.detailed-work ul li{
+  list-style: none;
+}
+
+.detailed-work h3{
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.retainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.retainer h3{
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.retainer h5{
+    font-size: 1rem;
+    color:darkgoldenrod
+}
+
+.retainer p {
+    font-weight: 300;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons button{
+    padding: 10px 16px;
+    border-radius: 12px; 
+    border: none;
+    background-color: darkgoldenrod;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: rgb(155, 120, 33);
+}
