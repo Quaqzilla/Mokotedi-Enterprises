@@ -13,7 +13,9 @@ const Webpages = () => {
                 <p>description of web services</p>
             </div>
 
-            <div className="web-box">
+            <div className="different-webs">
+                {/*Create a JSON file then pass it here for multiple component creation*/}
+                <div className="web-box">
         
                 <div className="web-grid">
                     <div className="web-icon">
@@ -55,19 +57,28 @@ const Webpages = () => {
                     </div>
                 </div>
                 
+                </div>
             </div>
+            
 
             <div className="add-ons">
 
                 <div className="heading">
                     <h1>Extra Services & Add-Ons</h1>
                 </div>
-
-                <div className="add-on-services">
-                    <h3>service type</h3>
-                    <p>description</p>
-                    <h4>Price: R</h4>
+                
+                <div className="add-services-container">
+                    <div className="add-on-services">
+                        <img src="" alt="service-img" />
+                        <div className='services-text'>
+                          <h3>service type</h3>
+                          <p>description</p>
+                          <h4>Price: R</h4>  
+                        </div>
+                        
+                    </div>
                 </div>
+                
             </div>
 
 
