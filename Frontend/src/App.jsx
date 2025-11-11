@@ -12,7 +12,7 @@ const App = () => {
   return(
       <BrowserRouter basename='/'>
         <Routes>
-          <Route path='/Mokotedi-Enterprises/' element={<Landing/>}/>
+          <Route path='/' element={<Landing/>}/>
           <Route path='/About-Us' element={<About/>}/>
           <Route path='/Our-Services' element={<Services/>}/>
           <Route path='/Our-Work' element={<Work/>}/>
