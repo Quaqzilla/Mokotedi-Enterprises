@@ -68,7 +68,7 @@
 }
 
 .web-icon p{
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -148,6 +148,10 @@
     align-items: center;
     padding: 18px 22px;
     border-radius: 12px;
+}
+
+.add-on-services img{
+    width: 90px;
 }
 
 .services-text h3{
