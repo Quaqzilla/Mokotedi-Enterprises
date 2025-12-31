@@ -43,6 +43,7 @@
     border: none;
     border-radius: 25px;
     transition: all 0.4s ease-in-out;
+    height: 100dvh;
 }
 
 .services-panel:hover{
@@ -86,6 +87,7 @@
     .services-panel{
         background-color: rgb(0, 0, 0);
         color: rgb(255, 255, 255);
+        width: 90dvw;
     }
 
     .panel-learnmore a{

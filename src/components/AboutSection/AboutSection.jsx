@@ -17,7 +17,7 @@ const AboutSection = () => {
                     </div>
 
                     <p data-aos = "fade-up" data-aos-duration = "3000">At <b>Mokotedi Enterprises</b>, we believe that technology should be both empowering and personal. 
-                        We're more than just a web development service—we’re your creative partner in building sleek, 
+                        We are more than just a website design & development company—we are your creative partner in building sleek, 
                         secure, and user-first websites that bring your vision to life.
                         Born from a desire to close the digital divide and uplift local businesses, we craft websites
                         that are both beautifully designed and fairly priced, so every client feels seen, supported, and special.
