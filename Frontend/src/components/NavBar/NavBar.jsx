@@ -66,36 +66,40 @@ const NavBar = () => {
     };
 
     return(
-        <div className={`navbar-component ${menuOpen ? 'menu-open' : ''}`}>
-            <div className="nav-logo" data-aos="fade-right" data-aos-duration="1500">
-                <img src={logo} alt="logo" onClick={homePage}/>
-            </div>
+        <>
+            <div className={`menu-overlay ${menuOpen ? 'active' : ''}`} onClick={closeMenu}></div>
+            
+            <div className="navbar-component">
+                <div className="nav-logo" data-aos="fade-right" data-aos-duration="1500">
+                    <img src={logo} alt="logo" onClick={homePage}/>
+                </div>
 
-            <div 
-                className={`hamburger ${menuOpen ? 'active' : ''}`}
-                onClick={handleHamburgerClick} 
-                aria-label="Toggle navigation" 
-                tabIndex={0} 
-                role="button"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+                <div 
+                    className={`hamburger ${menuOpen ? 'active' : ''}`}
+                    onClick={handleHamburgerClick} 
+                    aria-label="Toggle navigation" 
+                    tabIndex={0} 
+                    role="button"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
-            <div className={`nav-selection ${menuOpen ? 'open' : ''}`}>
-                <ul className={menuOpen ? 'open' : ''}>
-                    <a href="" data-aos="zoom-in" data-aos-duration="2000" onClick={AboutUs}>About Us</a>
-                    <a href="" data-aos="zoom-in" data-aos-duration="2200" onClick={Services}>Services</a>
-                    <a href="" data-aos="zoom-in" data-aos-duration="2400" onClick={Work}>Projects</a>
-                    <a href="" data-aos="zoom-in" data-aos-duration="2400" onClick={Contact}>Contact Us</a>
-                </ul>
-            </div>
+                <div className={`nav-selection ${menuOpen ? 'open' : ''}`}>
+                    <ul className={menuOpen ? 'open' : ''}>
+                        <a href="#" data-aos="zoom-in" data-aos-duration="2000" onClick={AboutUs}>About Us</a>
+                        <a href="#" data-aos="zoom-in" data-aos-duration="2200" onClick={Services}>Services</a>
+                        <a href="#" data-aos="zoom-in" data-aos-duration="2400" onClick={Work}>Projects</a>
+                        <a href="#" data-aos="zoom-in" data-aos-duration="2400" onClick={Contact}>Contact Us</a>
+                    </ul>
+                </div>
 
-            <div className="nav-button" data-aos="fade-left" data-aos-duration="2500">
-                <button onClick={Contact}>Contact Us</button>
+                <div className="nav-button" data-aos="fade-left" data-aos-duration="2500">
+                    <button onClick={Contact}>Contact Us</button>
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 

@@ -35,6 +35,16 @@ const ServicesSection = () => {
         }
     };
 
+    const websiteServices = async(e) => {
+        e.preventDefault();
+
+        try{
+            navigate('/webpages-offered');
+        }catch(error){
+            console.error(error);
+        }
+    };
+
     return(
         <div className="services-section">
 
@@ -137,6 +147,7 @@ const ServicesSection = () => {
                                             <li>AI Chat Bots</li>
                                             <li>Seemless User Navigation</li>
                                             <li>Effortless Site Management</li>
+                                            <li>Website maintenance & support</li>
                                         </ul>
                                     </div>
 
@@ -150,7 +161,7 @@ const ServicesSection = () => {
                                         </ul>
                                     </div>   
 
-                                    <h4>Starting Price: <b>R6500</b></h4>                                 
+                                    <a href="" onClick={websiteServices}>Learn more</a>                                
 
                                 </div>
                             </div>
