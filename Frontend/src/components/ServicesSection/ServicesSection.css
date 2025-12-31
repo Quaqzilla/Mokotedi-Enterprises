@@ -188,7 +188,7 @@
   border-radius: 25px;
   transition: all 0.4s ease-in-out;
   width: 30dvw;
-  height: 105dvh;
+  height: 110dvh;
   position: relative;
 }
 
@@ -214,7 +214,7 @@
    font-weight: 600;
    position: absolute;
    bottom: 0;
-   margin-bottom: 20px;
+   margin-bottom: 10px;
 }
 
 .info h3{
@@ -293,12 +293,13 @@
       background-color: rgb(0, 0, 0);
       color: rgb(255, 255, 255);
       width: 90dvw;
-      height: 75dvh;
 }
 .rate-text a{
   margin-bottom: 25px;
 }
 }
+
+
 
 @media (max-width: 1000px){
   .rates-frames{
