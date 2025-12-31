@@ -57,7 +57,7 @@ const Services = () => {
                     </div>
                     <div className="panel-description">
                         <p>We build modern websites <br/>and 
-                        provide expert tech <br/>consulting 
+                        provide expert tech <br/>consultancy 
                         to help your <br/>business grow and 
                         succeed <br/>in the digital world.</p>
                     </div>
