@@ -44,6 +44,7 @@
     border-radius: 25px;
     transition: all 0.4s ease-in-out;
     height: 100dvh;
+    position: relative;
 }
 
 .services-panel:hover{
@@ -63,6 +64,10 @@
     text-decoration: none;
     font-weight: 500;
     color: rgb(20, 22, 150);
+    position: absolute;
+    bottom: 0;
+    left: 3;
+    padding-bottom: 40px;
 }
 
 .panel-icon img{
@@ -88,6 +93,7 @@
         background-color: rgb(0, 0, 0);
         color: rgb(255, 255, 255);
         width: 90dvw;
+        height: 87dvh;
     }
 
     .panel-learnmore a{

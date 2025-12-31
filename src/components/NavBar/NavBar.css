@@ -92,7 +92,7 @@
 
 .hamburger span {
     display: block;
-    width: 100%;
+    width: 80%;
     height: 3px;
     background-color: white;
     transition: all 0.3s ease;
@@ -147,6 +147,7 @@
         opacity: 0;
         transform: translateX(50px);
         transition: all 0.3s ease;
+       
     }
 
     .nav-selection ul.open a {
@@ -171,7 +172,7 @@
     }
 
     .nav-selection a:hover {
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(236, 231, 231, 0.253);
     }
 
     .nav-button {
